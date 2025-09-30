@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ring: 0 0% 0%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.section {
+  @apply py-20 sm:py-24;
+}
+
+.card {
+  @apply rounded-2xl border border-zinc-200/60 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/60 backdrop-blur-sm shadow-sm hover:shadow-md transition-shadow;
+}
+
+/* --- Aesthetic extras --- */
+.edge-fade {
+  background: radial-gradient(60% 50% at 10% 10%, rgba(99,102,241,0.15), transparent 60%),
+              radial-gradient(60% 50% at 90% 20%, rgba(236,72,153,0.12), transparent 60%),
+              radial-gradient(70% 60% at 50% 100%, rgba(34,197,94,0.10), transparent 65%);
+}
+
+.glass {
+  @apply bg-white/60 dark:bg-zinc-900/50 backdrop-blur;
+}
+
+.btn {
+  @apply inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold transition;
+}
+.btn-primary {
+  @apply btn text-white bg-gradient-to-tr from-indigo-600 to-fuchsia-500 hover:opacity-90 dark:from-indigo-500 dark:to-fuchsia-400;
+  box-shadow: 0 10px 30px -10px rgba(99,102,241,.45), 0 8px 24px -12px rgba(236,72,153,.35);
+}
+.btn-ghost {
+  @apply btn border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100/50 dark:hover:bg-zinc-800/40;
+}
+.badge {
+  @apply text-xs px-2 py-1 rounded-full border border-zinc-200/60 dark:border-zinc-800/60 bg-white/50 dark:bg-zinc-900/30;
+}
+.section-title {
+  @apply text-3xl font-extrabold tracking-tight;
+}
+.section-eyebrow {
+  @apply text-[11px] uppercase tracking-[0.2em] text-zinc-500;
+}
+
+
