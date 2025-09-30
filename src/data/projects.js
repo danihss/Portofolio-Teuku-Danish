@@ -15,7 +15,7 @@ const projects = [
     title: "Project AI – Object Detection",
     description: "Deteksi benda via webcam—cepat, ringan, dan akurat.",
     tags: ["Vite", "React"],
-    href: "https://68dbb6a28ebcad124efa53f6--aiobjectdetec.netlify.app/",
+    href: "https://aiobjectdetec.netlify.app/",
     images: [
       // Tambahkan minimal 1 lagi agar slider muncul
       "/assets/Ai Project.jpg",
